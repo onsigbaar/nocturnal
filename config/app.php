@@ -177,8 +177,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        // Component
-        Onsigbaar\Foundation\Providers\FoundationServiceProvider::class,
+        /*
+         * AppBase
+         */
+        Onsigbaar\Foundation\Base\Providers\FoundationServiceProvider::class,
 
     ],
 
