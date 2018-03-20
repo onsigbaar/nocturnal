@@ -10,10 +10,9 @@ return [
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
-    |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'apiato'),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +25,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -165,23 +164,13 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Package Service Providers...
-         */
-
-        /*
          * Application Service Providers...
+         *
+         * The Ship Provider (The only exposed Service Provider by the App).
+         *
+         * NOTE: all packages service providers must be registered inside their container's main service providers.
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-
-        /*
-         * AppBase
-         */
-        Onsigbaar\Foundation\Base\Providers\FoundationServiceProvider::class,
-
+        Apiato\Core\Providers\ApiatoProvider::class,
     ],
 
     /*
@@ -230,7 +219,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        // NOTE: all packages aliases must be registered inside their containers service providers
     ],
 
 ];
