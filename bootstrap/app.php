@@ -2,19 +2,6 @@
 
 /*
 |--------------------------------------------------------------------------
-| Set PHPs serialization precision 
-|--------------------------------------------------------------------------
-| Make sure that everyone who has the right php version is using the more 
-| precise serialization_precision
-| refer to: https://github.com/apiato/apiato/issues/257 for an explanation
-| of the issue.
-*/
-if (version_compare(phpversion(), '7.1', '>=')) {
-    ini_set( 'serialize_precision', -1 );
-}
-
-/*
-|--------------------------------------------------------------------------
 | Create The Application
 |--------------------------------------------------------------------------
 |
@@ -41,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    App\Ship\Kernels\HttpKernel::class
+    App\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    App\Ship\Kernels\ConsoleKernel::class
+    App\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Ship\Exceptions\Handlers\ExceptionsHandler::class
+    App\Exceptions\Handler::class
 );
 
 /*
