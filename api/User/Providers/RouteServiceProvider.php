@@ -1,9 +1,13 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 3/1/19 7:34 PM
+ */
 
 namespace Api\User\Providers;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
