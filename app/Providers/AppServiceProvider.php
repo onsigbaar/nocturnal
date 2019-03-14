@@ -1,9 +1,13 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 3/1/19 7:34 PM
+ */
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
