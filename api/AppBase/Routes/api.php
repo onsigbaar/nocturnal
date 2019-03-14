@@ -1,6 +1,8 @@
 <?php
-
-use Illuminate\Http\Request;
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 3/1/19 7:34 PM
+ */
 
 /*
 |--------------------------------------------------------------------------

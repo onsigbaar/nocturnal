@@ -1,9 +1,13 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 3/12/19 5:22 AM
+ */
 
 namespace Api\AppBase\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Illuminate\Support\ServiceProvider;
 
 class AppBaseServiceProvider extends ServiceProvider
 {
@@ -37,6 +41,7 @@ class AppBaseServiceProvider extends ServiceProvider
     {
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(\Api\User\Providers\UserServiceProvider::class);
+        $this->app->register(\App\Components\Scaffold\Providers\ScaffoldServiceProvider::class);
     }
 
     /**
