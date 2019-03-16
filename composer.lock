@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f1d54dce8721d7da26baf43d2e40898",
+    "content-hash": "bb714b01160d77322fb49f063645ab74",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -6112,16 +6112,16 @@
         },
         {
             "name": "orangehill/iseed",
-            "version": "dev-master",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orangehill/iseed.git",
-                "reference": "38b9cdc74af79a605ad5110d7ce60e34f3e1f3bf"
+                "reference": "360ba1314e1dc950438bbb8006fc220de47dca00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orangehill/iseed/zipball/38b9cdc74af79a605ad5110d7ce60e34f3e1f3bf",
-                "reference": "38b9cdc74af79a605ad5110d7ce60e34f3e1f3bf",
+                "url": "https://api.github.com/repos/orangehill/iseed/zipball/360ba1314e1dc950438bbb8006fc220de47dca00",
+                "reference": "360ba1314e1dc950438bbb8006fc220de47dca00",
                 "shasum": ""
             },
             "require": {
@@ -6167,7 +6167,7 @@
                 "laravel",
                 "seed"
             ],
-            "time": "2019-02-08T07:45:41+00:00"
+            "time": "2018-12-07T08:06:29+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -7782,8 +7782,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "orangehill/iseed": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
