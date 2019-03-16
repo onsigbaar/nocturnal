@@ -1,6 +1,6 @@
 {
   "name"             : "onsigbaar/nocturnal",
-  "description"      : "Laravel Passport OAuth2 API Server with admin dashboard",
+  "description"      : "OAuth2 API Server authentication using Resouce Owner Password Credential Grant plus admin dashboard",
   "keywords"         : [
     "framework",
     "laravel",
