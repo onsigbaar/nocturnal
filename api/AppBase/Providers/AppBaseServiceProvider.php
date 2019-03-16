@@ -1,7 +1,7 @@
 <?php
 /**
  * Copyright(c) 2019. All rights reserved.
- * Last modified 3/12/19 5:22 AM
+ * Last modified 3/17/19 4:58 AM
  */
 
 namespace Api\AppBase\Providers;
@@ -41,7 +41,6 @@ class AppBaseServiceProvider extends ServiceProvider
     {
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(\Api\User\Providers\UserServiceProvider::class);
-        $this->app->register(\App\Components\Scaffold\Providers\ScaffoldServiceProvider::class);
     }
 
     /**
