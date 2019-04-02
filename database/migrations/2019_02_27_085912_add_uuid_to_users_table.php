@@ -1,7 +1,7 @@
 <?php
 /**
  * Copyright(c) 2019. All rights reserved.
- * Last modified 3/13/19 9:54 PM
+ * Last modified 2/28/19 2:33 AM
  */
 
 use Illuminate\Database\Migrations\Migration;

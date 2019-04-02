@@ -1,13 +1,9 @@
 <?php
-/**
- * Copyright(c) 2019. All rights reserved.
- * Last modified 3/17/19 4:58 AM
- */
 
 namespace Api\AppBase\Providers;
 
-use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Eloquent\Factory;
 
 class AppBaseServiceProvider extends ServiceProvider
 {

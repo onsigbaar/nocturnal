@@ -1,7 +1,7 @@
 <?php
 /**
  * Copyright(c) 2019. All rights reserved.
- * Last modified 3/15/19 1:05 AM
+ * Last modified 2/28/19 6:16 AM
  */
 
 use Illuminate\Database\Seeder;
@@ -30,9 +30,9 @@ class UsersTableSeeder extends Seeder
                 'email'             => 'user@api.com',
                 'email_verified_at' => NULL,
                 'password'          => password_hash('user', PASSWORD_BCRYPT),
-                'remember_token'    => null,
-                'created_at'        => null,
-                'updated_at'        => null,
+                'remember_token'    => NULL,
+                'created_at'        => NULL,
+                'updated_at'        => NULL,
             ),
         ));
         

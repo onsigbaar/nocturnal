@@ -2,9 +2,9 @@
 
 namespace App\Exceptions;
 
-use App\Components\Signal\Shared\Signal;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use App\Components\Signal\Shared\Signal;
 
 class Handler extends ExceptionHandler
 {

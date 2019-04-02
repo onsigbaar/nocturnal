@@ -2,8 +2,8 @@
 
 namespace Api\User\Providers;
 
-use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Eloquent\Factory;
 
 class UserServiceProvider extends ServiceProvider
 {
