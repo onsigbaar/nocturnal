@@ -1,4 +1,8 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 4/3/19 7:32 AM
+ */
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +17,4 @@
 
 Route::prefix('user')->group(function() {
     // Route::get('/', 'UserController@index');
-    Route::get('/', function() {
-        return "";
-    })->name('login');
 });
