@@ -1,8 +1,8 @@
 {
     "name": "onsigbaar/nocturnal",
     "type": "project",
-    "description": "Laravel Passport OAuth2 API Server authentication using Resouce Owner Password Credential Grant with optional Laravel admin dashboard.",
-    "keywords": ["framework", "laravel", "passport", "api server", "oauth2", "password grant", "onsigbaar"],
+    "description": "",
+    "keywords": [],
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
