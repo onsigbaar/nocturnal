@@ -8,22 +8,18 @@ return [
     'name'         => 'Passerby',
     'refreshToken' => [
         'cookie' => [
-            'httpOnly' => true,
+            'httpOnly' => env('COOKIE_HTTP_ONLY', true),
             'expire'   => 864000 // 864000 value will make the cookies expire in 10 days
         ],
     ],
-    'log'          => [ // log info into database, default into signal_log table
+    'log'          => [// log info into database, default into signal_log table
         'info' => [
             'login'   => [
-                'active'  => false,
+                'active'  => true,
                 'message' => 'User has successfully login.',
             ],
-            'refresh' => [
-                'active'  => false,
-                'message' => 'Token refreshed.',
-            ],
             'logout'  => [
-                'active'  => false,
+                'active'  => true,
                 'message' => 'User has successfully logout.',
             ],
         ],
