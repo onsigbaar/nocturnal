@@ -35,14 +35,16 @@ class AuthServiceProvider extends ServiceProvider
 
         if (class_exists(\App\Components\Scaffold\Providers\ScaffoldServiceProvider::class)) {
             if (Schema::hasTable('permissions')) {
-                $permissions = \App\Components\Scaffold\Entities\Permission::where('id', '>', 0)->pluck('key');
-                $scopes      = [];
+                if (class_exists(\App\Components\Scaffold\Entities\Permission::class)) {
+                    $permissions = \App\Components\Scaffold\Entities\Permission::where('id', '>', 0)->pluck('key');
+                    $scopes      = [];
 
-                foreach ($permissions as $permit) {
-                    $scopes[$permit] = ucwords(str_replace('_', ' ', $permit));
+                    foreach ($permissions as $permit) {
+                        $scopes[$permit] = ucwords(str_replace('_', ' ', $permit));
+                    }
+
+                    Passport::tokensCan($scopes);
                 }
-
-                Passport::tokensCan($scopes);
             }
         }
 
