@@ -90,5 +90,5 @@
         "app-artisan-migrate": "@php artisan migrate",
         "app-artisan-db-seed": "@php artisan db:seed",
         "app-passport-install": "@php artisan passport:install"
-    },
+    }
 }
