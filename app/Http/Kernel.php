@@ -66,6 +66,8 @@ class Kernel extends HttpKernel
         'verified'          => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'http.accept'       => \App\Components\Signature\Http\Middleware\CheckAcceptHttpHeader::class,
         'http.content-type' => \App\Components\Signature\Http\Middleware\CheckContentTypeHttpHeader::class,
+        'scopes'            => \App\Components\Signature\Http\Middleware\CheckScopes::class,
+        'scope'             => \App\Components\Signature\Http\Middleware\CheckForAnyScope::class,
     ];
 
     /**
